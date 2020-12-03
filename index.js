@@ -11,5 +11,5 @@ app.get('/', (req, res) => {
   res.send('<h1>Hello micro world!</h1>')
 })
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Example app listening at http://localhost:${process.env.PORT || port}`)
 })
